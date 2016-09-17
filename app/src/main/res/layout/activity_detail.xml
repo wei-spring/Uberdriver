@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:animateLayoutChanges="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.chunsheng.uberdriver.DetailActivity">
+
+    <ImageView
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="130dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/uber_map_bg" />
+
+    <RelativeLayout
+        android:id="@+id/layout_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="130dp"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <RelativeLayout
+            android:id="@+id/layout_bottom_sheet_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <me.chunsheng.uberdriver.CircularImageView
+                android:id="@+id/avatar"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="25dp"
+                android:src="@drawable/v_kill_all" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="25dp"
+                android:gravity="center"
+                android:paddingLeft="40dp"
+                android:text="评价 \n 五星*****"
+                android:textColor="@android:color/black" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="25dp"
+                android:gravity="center"
+                android:paddingRight="40dp"
+                android:text="接单 \n 4532单"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/avatar"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:text="联系车主?" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/help"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:text="预计5分钟后到达" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_bottom_sheet_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <me.chunsheng.uberdriver.CircularImageView
+                android:id="@+id/avatar_driver"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="25dp"
+                android:src="@drawable/v_kill_all" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/avatar_driver"
+                android:layout_marginLeft="35dp"
+                android:gravity="center"
+                android:text="车主: 西门吹雪"
+                android:textColor="@android:color/black" />
+
+
+            <me.chunsheng.uberdriver.CircularImageView
+                android:id="@+id/avatar_car"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="25dp"
+                android:src="@drawable/mono_uberxl2" />
+
+            <TextView
+                android:id="@+id/car_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/avatar_car"
+                android:layout_marginRight="35dp"
+                android:gravity="center"
+                android:text="车型: 法拉利"
+                android:textColor="@android:color/black" />
+
+
+            <TextView
+                android:id="@+id/help_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/car_name"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:text="联系车主?" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/help_call"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:text="预计5分钟后到达" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

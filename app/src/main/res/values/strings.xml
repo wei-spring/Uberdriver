@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Uberdriver</string>
+    <string name="title_activity_detail">Detail</string>
+    <string name="large_text">
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+</resources>
